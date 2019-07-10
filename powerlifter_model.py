@@ -55,7 +55,7 @@ class PowerlifterGenderModel:
             df[lift + '_missed'] = (df[lift] < 0).astype(int)
 
         # Create Total_missed_lifts feature
-        df['Total_missed_lifts'] = df['Squat1Kg_missed'] + df['Squat2Kg_missed'] + df['Squat3Kg_missed'] + df['Bench1Kg_missed']                                    + df['Bench2Kg_missed'] + df['Bench3Kg_missed'] + df['Deadlift1Kg_missed']                                                        + df['Deadlift2Kg_missed'] + df['Deadlift3Kg_missed']
+        df['Total_missed_lifts'] = df['Squat1Kg_missed'] + df['Squat2Kg_missed'] + df['Squat3Kg_missed'] + df['Bench1Kg_missed'] + df['Bench2Kg_missed'] + df['Bench3Kg_missed'] + df['Deadlift1Kg_missed'] + df['Deadlift2Kg_missed'] + df['Deadlift3Kg_missed']
 
         # Flag best lifts when missing
         best_lifts = ['Best3SquatKg', 'Best3BenchKg', 'Best3DeadliftKg']
